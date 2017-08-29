@@ -1,0 +1,41 @@
+int subwindow_1 = glutCreateSubWindow (main_window, 400, 0, 400, 350);
+int subwindow_2 = glutCreateSubWindow (main_window, 0, 0, 400, 350);
+int subwindow_3 = glutCreateSubWindow (main_window, 0, 350, 400, 350);
+int subwindow_4 = glutCreateSubWindow (main_window, 400, 350, 400,350);
+
+
+void display(){
+ glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+	 glFlush();
+}
+
+void Init(){
+          glMatrixMode(GL_PROJECTION);
+          gluOrtho2D(-400 , 400 , -350 , 350);
+}
+void myinit1()
+{
+ glLoadIdentity();
+ glMatrixMode(GL_PROJECTION);
+ gluOrtho2D(0,200,0,175);
+}
+void myinit2()
+{
+ glLoadIdentity();
+ glMatrixMode(GL_PROJECTION);
+ gluOrtho2D(-200,0,0,175);
+}
+void myinit3()
+{
+ glLoadIdentity();
+ glMatrixMode(GL_PROJECTION);
+ gluOrtho2D(-200,0,-175,0);
+}
+void myinit4()
+{
+ glLoadIdentity();
+ glMatrixMode(GL_PROJECTION);
+ gluOrtho2D(0,200,-175,0);
+}
+
+
