@@ -19,3 +19,9 @@ g++ file.cpp -lglut -lGLU -lGL  or   gcc file.c -lglut -lGLU -lGL
 Just Follow this Amazing [Youtube Video on Installation](https://www.youtube.com/watch?v=sCtHJRoEbI8) and it would Enough
 
 For that you would need CodeBlocks Setup!!
+
+## Important Note
+Any user using this Repo should include this Git link and Contributor's name in their work.
+
+## Contributors
+K. N. Dheeraj (kndheeraj0@gmail.com)
